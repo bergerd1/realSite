@@ -1,9 +1,9 @@
 @extends('admin.layouts.backend_layout')
 <!--header nav-->
- 
+
 
 @section('content')
-    
+
 	<div class="container-fluid">
     <div class="row col-md-offset-3 col-md-6">
 
@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="page-header">
-                    <h1>Create User </h1>
+                    <h1>Create User</h1>
                 </div>
 
                 <div class="col-md-9 col-md-offset-1 panel panel-default">
@@ -146,7 +146,7 @@
                                         <label for="user_role">Assign User Role</label>
 
                                         <select name="user_role" class="form-control">
-                        
+
                                             <option value="">Select User Role</option>
                                              @foreach($roles AS $roles_val)
                                             <option value="{{$roles_val->id}}">{{$roles_val->roles}}</option>
